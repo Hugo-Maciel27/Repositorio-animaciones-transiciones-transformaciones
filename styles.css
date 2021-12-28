@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 30px 0 20px 30px;
+    justify-content: space-between;
+    
+   ;
+}
+
+.header__logo{
+    max-width: 100%;
+}
+
+.hero__titulo{
+    font-size: 5rem;
+    color: blueviolet;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.header__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #BB8FCE;
+    align-items: center;
+}
+
+.header__item{
+    font-size: 3rem;
+    color: white;
+    list-style: none;
+    padding: 0px 65px;
+}
+
+.header__link{
+    text-decoration: none;
+    color: white;
+}
+
+.header__link:hover{
+    background-color: thistle;
+}
+
+.main{
+    background-color: #F4ECF7 ;
+    display: flex;
+    padding: 50px 22pxs;
+    background-image: linear-gradient(to top, pink, white);
+}
+
+.hero{
+    margin: 40px 22px;
+    position: relative;
+    display: flex;
+    display: grid;
+    flex-direction: row-reverse;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+}
+
+.hero__imagen{
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.hero__imagen--img{
+    width: 100%;
+
+}
+
+.hero__titulo{
+    font-size: 3rem;
+    color: blueviolet;
+    display: flex;
+}
+
+.hero__parrafo{
+    font-size: 2rem;
+    color:#AF7AC5 ;
+    display: flex;
+}
+
+.footer{
+    display: flex;
+    background-image: url(https://media.istockphoto.com/vectors/adorable-cat-paw-footprint-seamless-pattern-background-vector-id1271039899?k=20&m=1271039899&s=170667a&w=0&h=YJ1PFIHvIvRDADGVZgexCxfrM0V5Y0enQM3UKZtIcX4=);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 22px;
+}
+
+.footer__redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer__item{
+    padding-bottom: solid white;
+    font-size: 3rem;
+    list-style: none;
+}
+
+.footer__link{
+    padding-bottom: solid white;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.footer__mapa{
+    flex-basis: 100%;
+}
+
+.footer__mapa{
+    width: 90vw;
+  
+}
+
+.form{
+    color: #AF7AC5;
+}
+.perro{
+    position: absolute;
+    z-index: 1000;
+}
+
+/* AQUI EMPIEZA MI CODIGO CSS PARA LA PAGINA "INFORMACION ANIMAL" */
+.grillaDeImagenes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grillaDeImagenes__img{
+    display: inline-block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: relative;
+}
+
+.GRillaDeImagenes__img--{
+    position: absolute;
+}
+
+/* AQUI COMIENZAN MIS MEDIA QUERIES */
+
+@media screen and (max-width: 360px) and (min-width: 100px) {
+   .header__item{
+    padding: 0px 10px;
+   } 
+   .header, .header__lista{
+       flex-direction: column;
+       padding: 0px;
+       align-items: flex-start;
+   }
+    .footer__redes{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
