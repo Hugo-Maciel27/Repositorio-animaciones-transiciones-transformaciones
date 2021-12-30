@@ -34,31 +34,45 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #BB8FCE;
+    
     align-items: center;
 }
 
 .header__item{
     font-size: 3rem;
-    color: white;
     list-style: none;
     padding: 0px 65px;
+    -webkit-transition: width 2s 0s ease;
+    -moz-transition: width 2s 0s ease;
+    -o-transition: width 2s 0s ease;
+    transition: underline 2s 0s ease;
+}
+
+.header__item:hover{
+    height: 30px;
+    margin: 40px;
+    font-size: 3,5rem;
+    text-decoration: underline;
 }
 
 .header__link{
     text-decoration: none;
-    color: white;
+    color: violet;
+    
 }
 
 .header__link:hover{
-    background-color: thistle;
+
+    
+
 }
 
 .main{
     background-color: #F4ECF7 ;
     display: flex;
     padding: 50px 22pxs;
-    background-image: linear-gradient(to top, pink, white);
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0.8295693277310925) 27%, rgba(231,0,255,0.24693627450980393) 51%);
 }
 
 .hero{
@@ -88,6 +102,7 @@
     font-size: 3rem;
     color: blueviolet;
     display: flex;
+    font-family: unset;
 }
 
 .hero__parrafo{
@@ -98,7 +113,9 @@
 
 .footer{
     display: flex;
-    background-image: url(https://media.istockphoto.com/vectors/adorable-cat-paw-footprint-seamless-pattern-background-vector-id1271039899?k=20&m=1271039899&s=170667a&w=0&h=YJ1PFIHvIvRDADGVZgexCxfrM0V5Y0enQM3UKZtIcX4=);
+    background-image:background: rgb(231,0,255);
+    background: background: rgb(231,0,255);
+    background: linear-gradient(180deg, rgba(231,0,255,0.24693627450980393) 52%, rgba(118,103,119,0.6250875350140056) 66%, rgba(38,27,27,0.9976365546218487) 99%);;
     flex-direction: column;
     justify-content: space-around;
     padding: 50px 22px;
@@ -123,21 +140,13 @@
     text-decoration: none;
 }
 
-.footer__mapa{
+.footer__mapaContenedor{
     flex-basis: 100%;
+    overflow: hidden;
 }
 
 .footer__mapa{
-    width: 90vw;
-  
-}
-
-.form{
-    color: #AF7AC5;
-}
-.perro{
-    position: absolute;
-    z-index: 1000;
+    width: 100vw;
 }
 
 /* AQUI EMPIEZA MI CODIGO CSS PARA LA PAGINA "INFORMACION ANIMAL" */
@@ -149,6 +158,10 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
+}
+.grillaDeImagenes__contenedor{
+    overflow: hidden;
 }
 
 .grillaDeImagenes__img{
@@ -157,10 +170,28 @@
      height: 100%;
      object-fit: cover;
      position: relative;
+     -webkit-transition: all 1.9s 0s ease;
+-moz-transition: all 1.9s 0s ease;
+-o-transition: all 1.9s 0s ease;
+transition: all 1.9s 0s ease;
+}
+
+.grillaDeImagenes__img:hover{
+    height: 1000px;
+
 }
 
 .GRillaDeImagenes__img--{
     position: absolute;
+}
+
+/* CODIGO CSS PARA PAGINA CONTACTOS */
+.form{
+    color: #AF7AC5;
+}
+.form__1{
+    width: 100%;
+    height: 100%;
 }
 
 /* AQUI COMIENZAN MIS MEDIA QUERIES */
